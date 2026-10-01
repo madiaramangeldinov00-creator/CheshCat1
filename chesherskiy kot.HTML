@@ -1,0 +1,141 @@
+<html>
+<head>
+    <title>Чеширский кот</title>
+    <link rel="stylesheet" href="stylekot.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="header-container">
+        <nav class="shapka-nav">
+
+            <a href="#" class="header-button" id="catalogButton">
+                Каталог
+            </a>
+
+            <div class="search-box">
+                <input type="search" placeholder="Поиск...">
+                <button type="button">⌕</button>
+            </div>
+
+            <a href="/cart" class="header-button">
+                🛒 Корзина
+            </a>
+
+            <a href="/profile" class="header-button">
+                👤 Профиль
+            </a>
+
+        </nav>
+
+    </div>
+</header>
+
+<hr class="header-line">
+
+
+<!-- Окно каталога -->
+<div class="catalog-overlay" id="catalogOverlay">
+
+    <div class="catalog-window">
+
+        <button class="catalog-close" id="catalogClose">
+        </button>
+
+        <h2>Каталог</h2>
+
+        <div class="catalog-items">
+
+            <div class="catalog-item">
+                <h3>Корм</h3>
+            </div>
+
+            <div class="catalog-item">
+                <h3>Игрушки</h3>
+            </div>
+
+            <div class="catalog-item">
+                <h3>Принадлежности</h3>
+            </div>
+
+            <div class="catalog-item">
+                <h3>опроапгургрггурпиупавпруипгупоуиаупу</h3>
+            </div>
+
+            <div class="catalog-item">
+                <h3>Приаооргогикрооаьотврттрар тм</h3>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+const catalogButton = document.getElementById("catalogButton");
+const catalogOverlay = document.getElementById("catalogOverlay");
+const catalogClose = document.getElementById("catalogClose");
+
+catalogButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    catalogOverlay.style.display = "flex";
+});
+
+catalogClose.addEventListener("click", function() {
+    catalogOverlay.style.display = "none";
+});
+
+catalogOverlay.addEventListener("click", function(event) {
+    if (event.target === catalogOverlay) {
+        catalogOverlay.style.display = "none";
+    }
+});
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
